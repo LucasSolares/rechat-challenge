@@ -6,7 +6,7 @@ export interface ITask {
   description?: string;
   status: TaskStatus;
 
-  history: ITask[];
+  history: Partial<ITask>[];
 
   createdAt: Date;
   updatedAt: Date;
